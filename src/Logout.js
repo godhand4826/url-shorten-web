@@ -6,10 +6,10 @@ function Logout(props) {
       .then(() => props.setUser(null))
       .catch(alert);
   return (
-    <>
-      <div>hello, {props.user.name}</div>
+    <div>
+      hello, {props.user.name}
       <button onClick={() => logout()}>logout</button>
-    </>
+    </div>
   );
 }
 
